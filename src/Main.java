@@ -22,6 +22,7 @@ public class Main {
 //            input conroleren:
 
             boolean geldigeinput = false;
+           //als dit dan doe dat
             while (geldigeinput == false) {
 
                 input = scan.nextLine();
@@ -36,8 +37,6 @@ public class Main {
             }
 
             //input is geldig check resultaat:
-
-            //nee
 
             getaleind = Math.ceil(Math.random() * 10);
             boolean win = false;
