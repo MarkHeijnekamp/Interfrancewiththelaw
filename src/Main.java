@@ -14,16 +14,15 @@ public class Main {
         double getalstart = 0;
         double getaleind = 0;
 
-        int geld = 1;
+        int kansen = 10;
 
-        int winst = 1;
         while (runGame){
-        if(geld > 0){
+        if(kansen > 0){
             getalstart = Math.ceil(Math.random() * 10);
 System.out.println("je hebt minimaal 1 euro nodig om te spelen");
             System.out.println();
 
-System.out.println("je momenteel heb je " + geld + " euro");
+System.out.println("je momenteel heb je " + kansen + " euro");
             System.out.println();
 
             System.out.println("als je wint verdien je 1 euro");
@@ -92,15 +91,14 @@ System.out.println("Antwoord met hoger ,lager");
             System.out.println("Het eind getal is " + getaleind);
 
             if (win == true){
-                System.out.println("je hebt gewonnen oude gokverslaafde");
-               geld = winst + geld;
+                System.out.println("je hebt gewonnen");
             }
             else{
                 System.out.println();
-                System.out.println("je hebt verloren oude gokverslaafde");
-                geld--;
-                if (geld > 0){
-                System.out.println("nu heb je nog maar " + geld);}
+                System.out.println("je hebt verloren ");
+                kansen--;
+                if (kansen > 0){
+                System.out.println("nu heb je nog maar " + kansen);}
             else{
                     System.out.println("#################################################");
                     System.out.println("nu mag je niet meer spelen");
